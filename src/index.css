@@ -1,0 +1,18 @@
+/* src/index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+ html {
+   scroll-behavior: smooth;
+    scroll-padding-top: 50px; /* Điều chỉnh khoảng cách cuộn */
+    scroll-snap-stop: always; /* Dừng cuộn nếu người dùng thực hiện cuộn thêm */
+    --scroll-duration: 2s; /* Thời gian cuộn */
+    --scroll-timing-function: ease-in-out; /* Hàm thời gian */
+} 
+background-color: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px)
+
+
+    
