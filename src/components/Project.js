@@ -4,9 +4,10 @@ import { GoArrowRight } from "react-icons/go";
 
 const projects = [{
     id: 1 ,
-    ten: "profile",
-    img: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80",
-    linkgithub: "http://"
+    ten: "Profile",
+    img: "https://app.netlify.com/.netlify/images?url=https://d33wubrfki0l68.cloudfront.net/65fcdffabacba4b4fb4873b8/screenshot_2024-03-22-01-35-11-0000.webp&fit=cover&h=330&w=528",
+    linkgithub: "http://",
+    linkDemo: "https://myportfoliosonghuy.netlify.app/"
 },
 {
     id: 2 ,
@@ -16,20 +17,22 @@ const projects = [{
 },
 {
     id: 3 ,
-    ten: "Website .Net",
-    img: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80",
-    linkgithub: "http://"
+    ten: "Website Quiz",
+    img: "https://cache.careers360.mobi/media/article_images/2020/8/13/iima.webp",
+    linkgithub: "http://",
+    linkDemo: "http://",
+
 },
 {
     id: 34 ,
-    ten: "Website .Net",
-    img: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80",
+    ten: "ReactJs Furniture Shop",
+    img: "https://th.bing.com/th?id=OIF.U00%2bNWMMgZ9YvSM3YO8Z2g&rs=1&pid=ImgDetMain",
     linkgithub: "http://"
 },
 {
     id: 342 ,
-    ten: "Website .Net",
-    img: "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80",
+    ten: "Website Watch .Net",
+    img: "https://cdn6.singleinterface.com/files/outlet/outlet_facebook_images/outlet_cover_photo/106353/casio_banner_1_jpg.jpg",
     linkgithub: "http://"
 }
 ]
@@ -82,10 +85,10 @@ function Project() {
                 <span>Github</span>
                 <GoArrowRight />
               </button>
-              <button className="border-2 gap-2 px-4 py-2 rounded-lg transition border-[#969393] duration-300 hover:text-white hover:bg-[#969393] inline-flex items-center">
+              <a href={project.linkDemo}   className="border-2 gap-2 px-4 py-2 rounded-lg transition border-[#969393] duration-300 hover:text-white hover:bg-[#969393] inline-flex items-center">
                 <span>Livedemo</span>
                 <GoArrowRight />
-              </button>
+              </a>
             </div>
           </div>
         
