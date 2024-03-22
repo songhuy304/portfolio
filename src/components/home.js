@@ -1,11 +1,27 @@
 import React , { useEffect } from 'react'
 import Navbar from './navbar'
 import Cart from '../assets/kid.jpg'
+import CV from '../assets/cv.pdf'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import { FaGithub ,FaTwitter ,FaFacebook  } from "react-icons/fa";
 function Home() {
+
+  // Định nghĩa hàm handleDownload trong phạm vi của component Home
+  const handleDownload = () => {
+    // Đường dẫn đến file PDF của bạn
+    const pdfFilePath = CV;
+    
+    // Tạo một thẻ a (anchor) ẩn và sử dụng nó để tải file PDF
+    const link = document.createElement('a');
+    link.href = pdfFilePath;
+    link.download = 'cv.pdf'; // Tên mà file sẽ được lưu với
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   useEffect(() => {
     AOS.init({
       duration: 3000, // Tăng thời gian thực hiện animation lên 3000ms
@@ -17,6 +33,8 @@ function Home() {
       AOS.refresh();
     };
   }, []);
+
+  
   return (
     <section id="home" className="section relative bg-slate-100 h-screen">
       <Navbar />
@@ -30,7 +48,7 @@ function Home() {
             Frontend Developer
           </p>
           <div className="flex justify-center gap-[1rem]">
-            <button className="text-white bg-[#f46a07] px-4 py-2 rounded-full transition duration-300 hover:bg-[#f7a66c] inline-flex items-center">
+            <button   onClick={handleDownload} className="text-white bg-[#f46a07] px-4 py-2 rounded-full transition duration-300 hover:bg-[#f7a66c] inline-flex items-center">
               <svg
                 className="fill-current w-4 h-4 mr-2"
                 xmlns="http://www.w3.org/2000/svg"

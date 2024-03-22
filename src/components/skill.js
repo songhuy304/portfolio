@@ -88,19 +88,19 @@ function Skill() {
   return (
     <section
       id="skill"
-      className="skill section relative bg-slate-100 h-screen"
+      className="skill section relative bg-slate-100 md:h-screen height-[100%]"
     >
-      <h1 data-aos="fade-down" class="font-bold text-center md:pt-10 pt-5 text-3xl relative">
+      <h1 data-aos="fade-down" className="font-bold text-center md:pt-10 pt-5 text-3xl relative">
         SOFTWARE SKILLS
       </h1>
       <p className="text-center text-gray-500 italic">My favorite skills</p>
-      <div className="profile pb-16 flex md:gap-[5rem] flex-col md:my-16 md:mb-[10rem] h-full px-4 justify-center max-w-screen-lg mx-auto md:flex-row">
+      <div className="profile pb-16 flex md:gap-[5rem] md:mx-auto gap-[2rem] mt-7 flex-col md:my-16 md:mb-[10rem] h-full justify-center max-w-screen-lg md:flex-row">
         <div data-aos="fade-right" className="w-[420px] h-[420px]">
-          <div class="flex items-center justify-center gap-4 mb-5">
+          <div className="flex items-center justify-center gap-1 mt-5 mb-5">
             <AiOutlineAntDesign />
-            <h1 class="text-base font-[500]">Frontend Development</h1>
+            <h1 className="text-base font-[500]">Frontend Development</h1>
           </div>
-          <div className="mt-2 flex gap-10 justify-center flex-wrap">
+          <div className="mt-2 flex gap-5 justify-center flex-wrap">
             {Fe.map((course) => (
               <div key={course.id} className="flex flex-col items-center gap-3">
                 <button className="text-white bg-slate-200 px-5 py-8 rounded-full inline-flex items-center">
@@ -112,11 +112,11 @@ function Skill() {
           </div>
         </div>
         <div data-aos="fade-left" className="w-[420px] h-[420px]">
-          <div class="flex items-center justify-center gap-4 mb-5">
+          <div className="flex items-center justify-center gap-1 mb-5">
             <AiOutlineThunderbolt />
-            <h1 class="text-base font-[500]">Frontend Development</h1>
+            <h1 className="text-base font-[500]">BackEnd Development</h1>
           </div>
-          <div className="mt-2 flex gap-10 justify-center flex-wrap">
+          <div className="mt-2 flex gap-5 justify-center flex-wrap">
             {Be.map((course) => (
               <div key={course.id} className="flex flex-col items-center gap-3">
                 <button className="text-white bg-slate-200 px-5 py-8 rounded-full  inline-flex items-center">

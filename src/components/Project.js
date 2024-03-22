@@ -18,7 +18,7 @@ const projects = [{
 {
     id: 3 ,
     ten: "Website Quiz",
-    img: "https://cache.careers360.mobi/media/article_images/2020/8/13/iima.webp",
+    img: "https://img.freepik.com/free-vector/quiz-landing-page-design-website-banner-vector-template-kids-playing-online-trivia-quiz-learning-games_453374-357.jpg",
     linkgithub: "http://",
     linkDemo: "http://",
 
@@ -32,7 +32,7 @@ const projects = [{
 {
     id: 342 ,
     ten: "Website Watch .Net",
-    img: "https://cdn6.singleinterface.com/files/outlet/outlet_facebook_images/outlet_cover_photo/106353/casio_banner_1_jpg.jpg",
+    img: "https://media.shopdongho.com/2023/04/casio-new.png",
     linkgithub: "http://"
 }
 ]
@@ -40,7 +40,7 @@ function Project() {
    
   return (
     <section id="project" className="project section relative bg-white">
-        <h1 data-aos="fade-down" class="font-bold text-center md:pt-8 pt-5 text-3xl relative">
+        <h1 data-aos="fade-down" className="font-bold text-center md:pt-8 pt-5 text-3xl relative">
         PROJECTS
       </h1>
       <p className="text-center text-gray-500 italic">A few recent projects</p>
