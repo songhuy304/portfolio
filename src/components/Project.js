@@ -20,24 +20,32 @@ const projects = [{
     id: 34 ,
     ten: "Furniture Shop",
     img: "/images/fur.jpg",
-    linkgithub: "https://github.com/songhuy304/furnitureshop.github.io"
+    linkgithub: "https://github.com/songhuy304/furnitureshop.github.io",
+    linkDemo: "https://clone-zingmp3-two.vercel.app/"
+
 },
 {
     id: 342 ,
     ten: "Website Watch .Net",
     img: "https://media.shopdongho.com/2023/04/casio-new.png",
+    linkDemo: "https://clone-zingmp3-two.vercel.app/",
+
     linkgithub: "http://"
 },
 {
   id: 23 ,
   ten: "Audio Book",
   img: "/images/audio.png",
+  linkDemo: "https://clone-zingmp3-two.vercel.app/",
+
   linkgithub: "http://"
 },
 {
   id: 25 ,
   ten: "Flexoffice",
   img: "/images/flexoffice.png",
+  linkDemo: "https://clone-zingmp3-two.vercel.app/",
+
   linkgithub: "http://"
 }
 ]
