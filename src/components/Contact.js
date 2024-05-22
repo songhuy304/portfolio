@@ -32,7 +32,7 @@ function Contact() {
                   </svg>
                 </div>
                 <a
-                  href="javascript:void(0)"
+                  href="/"
                   className="text-[#007bff] text-sm ml-3"
                 >
                   <small className="block">Mail</small>
@@ -45,7 +45,7 @@ function Contact() {
             <h2 className="text-lg font-extrabold">Socials</h2>
             <ul className="flex mt-3 space-x-4">
               <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                <a href="javascript:void(0)">
+                <a href="/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20px"
@@ -61,7 +61,7 @@ function Contact() {
                 </a>
               </li>
               <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                <a href="javascript:void(0)">
+                <a href="/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20px"
@@ -77,7 +77,7 @@ function Contact() {
                 </a>
               </li>
               <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                <a href="javascript:void(0)">
+                <a href="/">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20px"
