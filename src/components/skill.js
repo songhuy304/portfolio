@@ -3,19 +3,21 @@ import AOS from 'aos';
 
 
 import 'aos/dist/aos.css';
-import htmlIcon  from '../assets/file_type_html_icon_130541.png';
-import cssIcon from '../assets/file_type_css_icon_130661.png';
+import htmlIcon  from '../assets/html.png';
+import cssIcon from '../assets/css.png';
 import jsIcon from '../assets/js.png';
-import bootstrapicon from '../assets/bootstrap.png';
+import bootstrapicon from '../assets/bt.png';
 import reacticon from '../assets/react.png';
+import tailwin from '../assets/tailwin.png';
 import { AiOutlineThunderbolt ,AiOutlineAntDesign  } from "react-icons/ai";
 
 // icon Be
 import java  from '../assets/java.png';
-import sqlsever from '../assets/sqlsever.png';
+import sqlsever from '../assets/sql.png';
 import net from '../assets/net.png';
-import node from '../assets/node.png';
+import node from '../assets/nodejs.png';
 import mysql from '../assets/mysql.png';
+import mongo from '../assets/mongo.png';
 const Fe = [
   {   
       id: 1,
@@ -29,7 +31,7 @@ const Fe = [
   }, 
   { 
       id: 3,
-      name:'javascripts',
+      name:'Javascripts',
       img: jsIcon
   }, 
   { 
@@ -42,6 +44,11 @@ const Fe = [
       name:'ReactJs',
       img: reacticon
   },
+  { 
+    id: 6,
+    name:'Tailwincss',
+    img: tailwin
+},
 
 ]
 
@@ -70,6 +77,11 @@ const Be = [
   id: 5,
   name:'Node Js',
   img: node
+},
+{ 
+  id: 6,
+  name:'Mongo',
+  img: mongo
 },
 ]
 
@@ -103,8 +115,8 @@ function Skill() {
           <div className="mt-2 flex gap-5 justify-center flex-wrap">
             {Fe.map((course) => (
               <div key={course.id} className="flex flex-col items-center gap-3">
-                <button className="text-white bg-slate-200 px-5 py-8 rounded-full inline-flex items-center">
-                  <img alt={course.name} src={course.img} className="w-14 transform scale-100 hover:scale-110 transition duration-300" />
+                <button className="text-white bg-slate-200 p-5 md:p-8 rounded-full inline-flex items-center">
+                  <img alt={course.name} src={course.img} className="w-14 grayscale hover:grayscale-0 object-cover transform scale-100 hover:scale-110 transition duration-300" />
                 </button>
                 <span className="font-serif text-lg text-gray-800 text-center">{course.name}</span>
               </div>
@@ -112,15 +124,15 @@ function Skill() {
           </div>
         </div>
         <div data-aos="fade-left" className="w-[420px] h-[420px]">
-          <div className="flex items-center justify-center gap-1 mb-5">
+          <div className="flex items-center justify-center gap-1 mt-5 mb-5">
             <AiOutlineThunderbolt />
             <h1 className="text-base font-[500]">BackEnd Development</h1>
           </div>
           <div className="mt-2 flex gap-5 justify-center flex-wrap">
             {Be.map((course) => (
               <div key={course.id} className="flex flex-col items-center gap-3">
-                <button className="text-white bg-slate-200 px-5 py-8 rounded-full  inline-flex items-center">
-                  <img alt={course.name} src={course.img} className="w-14 transition-transform duration-300 transform hover:-translate-y-1 hover:scale-110" />
+                <button className="text-white bg-slate-200 p-5 md:p-8  rounded-full  inline-flex items-center">
+                  <img alt={course.name} src={course.img} className="w-14 grayscale hover:grayscale-0  transition-transform duration-300 transform hover:-translate-y-1 hover:scale-110" />
                 </button>
                 <span className='font-serif text-lg text-gray-800 text-center'>{course.name}</span>
               </div>

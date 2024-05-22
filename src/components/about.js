@@ -1,7 +1,7 @@
 import React, { useEffect }  from 'react'
 import Kid from '../assets/cart.jpg'
 import AOS from 'aos';
-
+import { MdOutlineEmail , MdOutlineLocalPhone , MdOutlineLocationOn  } from "react-icons/md";
 
 import 'aos/dist/aos.css';
 function About() {
@@ -27,57 +27,58 @@ function About() {
         <div data-aos="fade-up" className="flex flex-col  gap-3">
           <h1 className="font-bold text-5xl text-[#f46a07] ">ABOUT ME</h1>
           <p className="font-medium text-sm text-gray-500 max-w-[30rem] mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-            reprehenderit et laborum, rem, dolore eum quod voluptate
-            exercitationem nobis, nihil esse debitis maxime facere minus sint
-            delectus velit in eos quo officiis explicabo deleniti dignissimos.
-            Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-            reiciendis ea magnam? Nulla, impedit fuga!
+            Hi there, welcome to look at my profile! In 1+ years of Frontend
+            experience. I'm passionate about creating seamless user experiences
+            and believe that simplifying code leads to more agile applications.
           </p>
-          <div className="flex md:flex-row flex-col  gap-2">
-            <div classname="w-full rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1  cursor-pointer">
-              <div classname=" rounded-full flex h-full w-full  bg-white back hover:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
-                <h2 classname="text-[1.25rem] text-black px-4 py-1">
-                  songhuy304@gmail.com
-                </h2>
-              </div>
+          <div className="flex flex-col gap-2">
+            <div className="flex gap-2 items-center">
+              <MdOutlineEmail />
+              <span className="font-semibold">songhuy304@gmail.com</span>
             </div>
-
-            <div classname="w-full rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1 cursor-pointer">
-              <div classname=" rounded-full flex h-full w-full  bg-white back hover:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
-                <h2 classname="text-[1.25rem] text-black px-4 py-1">
-                  Đặng Song Huy
-                </h2>
-              </div>
+            <div className="flex gap-2 items-center">
+              <MdOutlineLocalPhone />
+              <span className="font-semibold">0914420455</span>
+            </div>
+            <div className="flex gap-2 items-center">
+              <MdOutlineLocationOn />
+              <span className="font-semibold">HCM</span>
             </div>
           </div>
           <div className="flex flex-row gap-2 mt-3">
-          <div  data-aos="zoom-in-right" classname="bg-slate-50 cursor-pointer rounded-md max-w-25 hover:bg-slate-200">
+            <div
+              data-aos="zoom-in-right"
+              className="bg-slate-50 cursor-pointer rounded-md max-w-25 hover:bg-slate-200"
+            >
               <div className="py-3 px-4">
-                <h3 className="text-center font-bold text-[1.75rem]">
-                  02+
-                </h3>
-                <p className="text-center text-[1rem] text-gray-500">Year Experience</p>
+                <h3 className="text-center font-bold text-[1.75rem]">01+</h3>
+                <p className="text-center text-[1rem] text-gray-500">
+                  Year Experience
+                </p>
               </div>
             </div>
-            <div data-aos="zoom-in-up" classname="bg-slate-50 hover:bg-slate-200 cursor-pointer rounded-md max-w-25">
+            <div
+              data-aos="zoom-in-up"
+              className="bg-slate-50 hover:bg-slate-200 cursor-pointer rounded-md max-w-25"
+            >
               <div className="py-3 px-4">
-                <h3 className="text-center font-bold text-[1.75rem]">
-                  10+
-                </h3>
-                <p className="text-center text-[1rem] text-gray-500">Complete Project</p>
+                <h3 className="text-center font-bold text-[1.75rem]">5+</h3>
+                <p className="text-center text-[1rem] text-gray-500">
+                  Complete Project
+                </p>
               </div>
             </div>
-            <div  data-aos="zoom-in-left" classname="bg-slate-50 hover:bg-slate-200 cursor-pointer rounded-md max-w-25">
+            <div
+              data-aos="zoom-in-left"
+              className="bg-slate-50 hover:bg-slate-200 cursor-pointer rounded-md max-w-25"
+            >
               <div className="py-3 px-4">
-                <h3 className="text-center font-bold text-[1.75rem]">
-                  24/7
-                </h3>
-                <p className="text-center text-[1rem] text-gray-500">Online Support</p>
+                <h3 className="text-center font-bold text-[1.75rem]">24/7</h3>
+                <p className="text-center text-[1rem] text-gray-500">
+                  Online Support
+                </p>
               </div>
             </div>
-
-          
           </div>
         </div>
       </div>

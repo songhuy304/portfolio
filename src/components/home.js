@@ -39,7 +39,7 @@ function Home() {
     <section id="home" className="section relative bg-slate-100 h-screen">
       <Navbar />
       <div className="profile flex md:gap-[5rem] flex-col md:pb-[10rem] h-full px-4  justify-center items-center max-w-screen-lg mx-auto md:flex-row">
-        <div className="self-center text-center "  data-aos="fade-up">
+        <div className="self-center text-center " data-aos="fade-up">
           <p className="font-[600] text-[1.25rem]  text-gray-700 text-center">
             Hello, I'm
           </p>
@@ -48,7 +48,10 @@ function Home() {
             Frontend Developer
           </p>
           <div className="flex justify-center gap-[1rem]">
-            <button   onClick={handleDownload} className="text-white bg-[#f46a07] px-4 py-2 rounded-full transition duration-300 hover:bg-[#f7a66c] inline-flex items-center">
+            <button
+              onClick={handleDownload}
+              className="text-white bg-[#f46a07] px-4 py-2 rounded-full transition duration-300 hover:bg-[#f7a66c] inline-flex items-center"
+            >
               <svg
                 className="fill-current w-4 h-4 mr-2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,12 +66,19 @@ function Home() {
             </button>
           </div>
           <div className="flex justify-center mt-[1rem] gap-[1rem]">
-            <FaGithub className="w-8 h-8 cursor-pointer" />
-            <FaTwitter className="w-8 h-8 cursor-pointer" />
-             <FaFacebook className="w-8 h-8 cursor-pointer" />
+            <a href="https://github.com/songhuy304">
+              <FaGithub className="w-8 h-8 cursor-pointer hover:text-[#f46a07]" />
+            </a>
+            <a href="https://github.com/songhuy304">
+              {" "}
+              <FaTwitter className="w-8 h-8 cursor-pointer hover:text-[#f46a07]" />
+            </a>
+            <a href="https://www.facebook.com/songhuy30004">
+              <FaFacebook className="w-8 h-8 cursor-pointer hover:text-[#f46a07]" />
+            </a>
           </div>
         </div>
-        <div  data-aos="fade-left" className=" ">
+        <div data-aos="fade-left" className=" ">
           <img
             src={Cart}
             alt=""
