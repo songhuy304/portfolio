@@ -2,6 +2,7 @@ import React , { useEffect } from 'react'
 import Navbar from './navbar'
 import Cart from '../assets/kid.jpg'
 import CV from '../assets/cv.pdf'
+import CV1 from '../assets/DangSongHuy-Resume.pdf'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -11,7 +12,7 @@ function Home() {
   // Định nghĩa hàm handleDownload trong phạm vi của component Home
   const handleDownload = () => {
     // Đường dẫn đến file PDF của bạn
-    const pdfFilePath = CV;
+    const pdfFilePath = CV1 || CV;
     
     // Tạo một thẻ a (anchor) ẩn và sử dụng nó để tải file PDF
     const link = document.createElement('a');
